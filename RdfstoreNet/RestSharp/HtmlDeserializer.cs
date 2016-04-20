@@ -33,15 +33,7 @@ namespace RdfstoreNet.RestSharp
                         string[] resultRows = model.Content.Split('\n');
                         resultRows = resultRows.Skip(1).Take(resultRows.Length - 2).ToArray();
                         foreach (string row in resultRows)
-                        {
-                            string[] rowEntries = row.Split('\t');
-                            for (int i = 0; i < rowEntries.Length; i++)
-                            {
-                                string rowEntry = rowEntries[i];
-                                rowEntries[i] = rowEntry.Substring(1, rowEntry.Length - 2);
-                            }
-                            model.Results.Add(rowEntries);
-                        }
+                            model.Results.Add(row.Split('\t'));
                     }
                 }
 
