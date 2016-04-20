@@ -27,7 +27,7 @@ namespace RdfstoreNet
             //Initialize the rest client
             _client = new RestClient();
             _client.ClearHandlers();
-            _client.AddHandler("*", new JsonNETDeserializer());
+            _client.AddHandler("*", new HtmlDeserializer());
         }
 
         #region Synchronous

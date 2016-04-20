@@ -64,6 +64,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Integration\Endpoints\TemplateEndpointIntegrationTest.cs" />
+    <Compile Include="Unit\Helpers\QueryBuilderTest.cs" />
     <Compile Include="Integration\AccessManagerBaseSetup.cs" />
     <Compile Include="Integration\Endpoints\TripleEndpointIntegrationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

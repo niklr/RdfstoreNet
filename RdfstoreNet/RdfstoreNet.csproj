@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,12 +51,17 @@
   <ItemGroup>
     <Compile Include="AccessManager.cs" />
     <Compile Include="AccessManagerBase.cs" />
+    <Compile Include="Endpoints\Interfaces\ITemplateEndpoint.cs" />
     <Compile Include="Endpoints\Interfaces\ITripleEndpoint.cs" />
+    <Compile Include="Endpoints\TemplateEndpoint.cs" />
     <Compile Include="Endpoints\TripleEndpoint.cs" />
+    <Compile Include="Helpers\QueryBuilder.cs" />
     <Compile Include="Models\AuthenticationModel.cs" />
+    <Compile Include="Models\Template\TemplateResponseModel.cs" />
     <Compile Include="Models\Triple\TripleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RdfstoreException.cs" />
+    <Compile Include="RestSharp\HtmlDeserializer.cs" />
     <Compile Include="RestSharp\JsonNETDeserializer.cs" />
     <Compile Include="RestSharp\JsonNETSerializer.cs" />
   </ItemGroup>
