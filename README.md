@@ -25,7 +25,7 @@ tripleEndpoint.CreateTriple(triple);
 
 ### Create triple using the template endpoint
 ```csharp
-string templateName = “Insert_Triple_(Fuseki)”;
+string templateName = "Insert_Triple_(Fuseki)";
 var triple = new TripleModel()
 {
     Subject = "http://virtualskeleton.ch/api/objects/1",
@@ -38,7 +38,7 @@ templateEndpoint.CallTemplate(templateName, triple.Subject, triple.Predicate, tr
 
 ### Get resources
 ```csharp
-string templateName = “Get_Resources”;
+string templateName = "Get_Resources";
 var templateEndpoint = new TemplateEndpoint(accessManager);
 var response = templateEndpoint.CallTemplate(templateName);
 ```
