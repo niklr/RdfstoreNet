@@ -1,6 +1,5 @@
 ﻿using RdfstoreNet.RestSharp;
 using RestSharp;
-using RestSharp.Serializers;
 using System;
 using System.Linq;
 using System.Net;
@@ -15,7 +14,6 @@ namespace RdfstoreNet
     /// </summary>
     public abstract class AccessManagerBase
     {
-        internal readonly ISerializer DefaultJsonSerializer = new JsonNETSerializer();
         private const string LocationHeaderName = "Location";
         private readonly string _baseUrl;
         private RestClient _client;
