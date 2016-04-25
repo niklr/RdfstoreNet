@@ -24,9 +24,9 @@ namespace RdfstoreNet.Tests.Integration.Endpoints
             //assemble
             TripleModel triple = new TripleModel()
             {
-                Subject = "a",
-                Predicate = "b",
-                Object = "c"
+                Subject = "https://github.com/niklr/RdfstoreNet/subjects/a",
+                Predicate = "https://github.com/niklr/RdfstoreNet/predicates/b",
+                Object = "https://github.com/niklr/RdfstoreNet/objects/c"
             };
 
             //act
@@ -43,9 +43,9 @@ namespace RdfstoreNet.Tests.Integration.Endpoints
             ManualResetEvent completion = new ManualResetEvent(false);
             TripleModel triple = new TripleModel()
             {
-                Subject = "a",
-                Predicate = "b",
-                Object = "c"
+                Subject = "https://github.com/niklr/RdfstoreNet/subjects/a",
+                Predicate = "https://github.com/niklr/RdfstoreNet/predicates/b",
+                Object = "https://github.com/niklr/RdfstoreNet/objects/c"
             };
 
             //act
@@ -63,9 +63,9 @@ namespace RdfstoreNet.Tests.Integration.Endpoints
             //assemble
             TripleModel triple = new TripleModel()
             {
-                Subject = "a",
-                Predicate = "b",
-                Object = "c"
+                Subject = "https://github.com/niklr/RdfstoreNet/subjects/a",
+                Predicate = "https://github.com/niklr/RdfstoreNet/predicates/b",
+                Object = "https://github.com/niklr/RdfstoreNet/objects/c"
             };
 
             //act
@@ -82,9 +82,9 @@ namespace RdfstoreNet.Tests.Integration.Endpoints
             ManualResetEvent completion = new ManualResetEvent(false);
             TripleModel triple = new TripleModel()
             {
-                Subject = "a",
-                Predicate = "b",
-                Object = "c"
+                Subject = "https://github.com/niklr/RdfstoreNet/subjects/a",
+                Predicate = "https://github.com/niklr/RdfstoreNet/predicates/b",
+                Object = "https://github.com/niklr/RdfstoreNet/objects/c"
             };
 
             //act

@@ -22,25 +22,25 @@ namespace RdfstoreNet.Endpoints
         public void CreateTriple(TripleModel triple)
         {
             Validate(triple);
-            _templateEndpoint.CallTemplate(CreateTriplePath, triple.Subject, triple.Predicate, triple.Object);
+            _templateEndpoint.GetTemplate(CreateTriplePath, triple.Subject, triple.Predicate, triple.Object);
         }
 
         public void CreateTripleAsync(Action success, Action<RdfstoreException> failure, TripleModel triple)
         {
             Validate(triple);
-            _templateEndpoint.CallTemplateAsync(CreateTriplePath, success, failure, triple.Subject, triple.Predicate, triple.Object);
+            _templateEndpoint.GetTemplateAsync(CreateTriplePath, success, failure, triple.Subject, triple.Predicate, triple.Object);
         }
 
         public void DeleteTriple(TripleModel triple)
         {
             Validate(triple);
-            _templateEndpoint.CallTemplate(DeleteTriplePath, triple.Subject, triple.Predicate, triple.Object);
+            _templateEndpoint.GetTemplate(DeleteTriplePath, triple.Subject, triple.Predicate, triple.Object);
         }
 
         public void DeleteTripleAsync(Action success, Action<RdfstoreException> failure, TripleModel triple)
         {
             Validate(triple);
-            _templateEndpoint.CallTemplateAsync(DeleteTriplePath, success, failure, triple.Subject, triple.Predicate, triple.Object);
+            _templateEndpoint.GetTemplateAsync(DeleteTriplePath, success, failure, triple.Subject, triple.Predicate, triple.Object);
         }
 
         #endregion
